@@ -1,0 +1,652 @@
+/* Learn More Page Styles */
+.learn-more-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d3ebce 0%, #e8f5e1 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.learn-more-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.learn-more-header .logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #72a367;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-btn-outline {
+  background: transparent;
+  color: #72a367;
+  border: 2px solid #72a367;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn-outline:hover {
+  background: #72a367;
+  color: white;
+}
+
+.nav-btn {
+  background: #72a367;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #5a8552;
+  box-shadow: 0 2px 8px rgba(114, 163, 103, 0.3);
+}
+
+/* Hero Section */
+.learn-more-hero {
+  text-align: center;
+  padding: 60px 32px;
+  color: #2d5a2d;
+}
+
+.learn-more-hero h1 {
+  font-size: 48px;
+  margin: 0 0 16px 0;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #5a7a5a;
+  margin: 0;
+}
+
+/* Mission Section */
+.mission-section {
+  background: white;
+  padding: 60px 32px;
+  margin: 40px 0;
+}
+
+.mission-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-section h2 {
+  font-size: 36px;
+  color: #2d5a2d;
+  margin-bottom: 24px;
+}
+
+.mission-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* Goals Section */
+.goals-section {
+  padding: 60px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.goals-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #2d5a2d;
+  margin-bottom: 48px;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.goal-card {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.goal-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.goal-card h3 {
+  font-size: 20px;
+  color: #2d5a2d;
+  margin: 16px 0;
+}
+
+.goal-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Values Section */
+.values-section {
+  background: white;
+  padding: 60px 32px;
+  margin: 40px 0;
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #2d5a2d;
+  margin-bottom: 48px;
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-item h3 {
+  font-size: 20px;
+  color: #72a367;
+  margin-bottom: 12px;
+}
+
+.value-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Impact Section */
+.impact-section {
+  padding: 60px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.impact-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #2d5a2d;
+  margin-bottom: 48px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.impact-item {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.impact-item h4 {
+  font-size: 18px;
+  color: #72a367;
+  margin-bottom: 16px;
+}
+
+.impact-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.impact-item li {
+  font-size: 14px;
+  color: #666;
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.impact-item li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #72a367;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #72a367 0%, #5a8552 100%);
+  color: white;
+  padding: 60px 32px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin: 0 0 32px 0;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn-primary,
+.cta-btn-secondary {
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cta-btn-primary {
+  background: white;
+  color: #72a367;
+}
+
+.cta-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer {
+  background: #2d5a2d;
+  color: white;
+  text-align: center;
+  padding: 32px;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .learn-more-header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .learn-more-hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .mission-section,
+  .goals-section,
+  .values-section,
+  .impact-section,
+  .cta-section {
+    padding: 40px 16px;
+  }
+
+  .goals-section h2,
+  .values-section h2,
+  .impact-section h2,
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .learn-more-header {
+    padding: 12px 12px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .learn-more-header .logo {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .header-buttons {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav-btn-outline,
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    flex: 1;
+  }
+
+  .learn-more-hero {
+    padding: 30px 16px;
+  }
+
+  .learn-more-hero h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .mission-section {
+    padding: 30px 16px;
+  }
+
+  .mission-section h2,
+  .goals-section h2,
+  .values-section h2,
+  .impact-section h2,
+  .cta-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .goal-card {
+    padding: 20px 16px;
+  }
+
+  .goal-icon {
+    font-size: 36px;
+  }
+
+  .goal-card h3 {
+    font-size: 16px;
+    margin: 12px 0;
+  }
+
+  .goal-card p {
+    font-size: 13px;
+  }
+
+  .values-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .value-item h3 {
+    font-size: 16px;
+  }
+
+  .value-item p {
+    font-size: 13px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .impact-item {
+    padding: 20px 16px;
+  }
+
+  .impact-item h4 {
+    font-size: 15px;
+  }
+
+  .impact-item li {
+    font-size: 12px;
+    padding: 6px 0 6px 20px;
+  }
+
+  .cta-section {
+    padding: 40px 12px;
+  }
+
+  .cta-section h2 {
+    font-size: 20px;
+  }
+
+  .cta-section p {
+    font-size: 14px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .learn-more-header {
+    padding: 10px 8px;
+    gap: 8px;
+  }
+
+  .learn-more-header .logo {
+    font-size: 16px;
+  }
+
+  .header-buttons {
+    width: 100%;
+    gap: 6px;
+  }
+
+  .nav-btn-outline,
+  .nav-btn {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+  }
+
+  .learn-more-hero {
+    padding: 25px 12px;
+  }
+
+  .learn-more-hero h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+  }
+
+  .mission-section {
+    padding: 20px 12px;
+    margin: 20px 0;
+  }
+
+  .mission-section h2,
+  .goals-section h2,
+  .values-section h2,
+  .impact-section h2,
+  .cta-section h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .mission-section p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .goals-section {
+    padding: 20px 8px;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .goal-card {
+    padding: 16px 12px;
+  }
+
+  .goal-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .goal-card h3 {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .goal-card p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .values-section {
+    padding: 20px 8px;
+  }
+
+  .values-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .value-item h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .value-item p {
+    font-size: 12px;
+  }
+
+  .impact-section {
+    padding: 20px 8px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .impact-item {
+    padding: 16px 12px;
+  }
+
+  .impact-item h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .impact-item ul {
+    list-style: none;
+  }
+
+  .impact-item li {
+    font-size: 11px;
+    padding: 5px 0 5px 18px;
+  }
+
+  .cta-section {
+    padding: 30px 8px;
+  }
+
+  .cta-section h2 {
+    font-size: 18px;
+  }
+
+  .cta-section p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    padding: 8px 12px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 20px 8px;
+    font-size: 11px;
+  }
+}
